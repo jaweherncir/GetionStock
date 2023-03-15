@@ -26,6 +26,17 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  
+  <!-- Google Font: Source Sans Pro -->
+  <!-- Font Awesome -->
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -43,10 +54,10 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="index.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Espace Admin</a>
+        <a href="/compte.html" class="nav-link">Espace Admin</a>
       </li>
     </ul>
 
@@ -259,12 +270,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Accueil</h1>
+            <h1 class="m-0">Clients</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-              <li class="breadcrumb-item active">Gestion De Stock</li>
+              <li class="breadcrumb-item active">Liste clients</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -275,77 +286,82 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>150</h3>
+      
+       <!-- /.card -->
 
-                <p>Total de Produits</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px"></sup></h3>
+       <div class="card">
 
-                <p>Fournisseurs</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person"></i>
-              </div>
-              <a href="#" class="small-box-footer"><i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-
-                <p>Clients</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>65</h3>
-
-                <p>Factures</p>
-              </div>
-              <div class="icon">
-                <i class="fa fa-file-text-o"></i>
-              </div>
-              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
+        <div class="card-header" style="background-color: rgb(4, 25, 253);">
+      
         </div>
+        <div class="card-header" >
+            <a class="btn btn-app bg-success">
+                <span class="badge bg-purple">891</span>
+                <i class="fas fa-users"></i> Ajouter  produit
+              </a>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <table id="example1" class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th><center>Client</center></th>
+              <th><center>Ville</center></th>
+              <th><center>Email</center></th>
+              <th><center>Téléphone</center></th>
+              <th></th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+       
+           
+            <tr>
+              <td><center>client1</center></td>
+              <td><center>Tunise</center></td>
+              <td><center><button type="button" class="btn btn-primary" disabled="true">jaweherncir@gmail.com</button></center></td>
+              <td><center>20113786</center></td>
+              <td><center><i class="fa fa-pencil" aria-hidden="true" style="color: rgb(84, 156, 11);width: 10px;"></i></center></td>
+              <td><center><i class="fa fa-trash" aria-hidden="true" style="color: rgb(240, 7, 7);width: 10px;"></i></center></td>
+            </tr>
+     
+            </tbody>
+            <tfoot>
+            <tr>
+              <th><center>Client</center></th>
+              <th><center>Ville</center></th>
+              <th><center>Email</center></th>
+              <th><center>Téléphone</center></th>
+              <th></th>
+              <th></th>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-
-
-
-
   </div>
 
 
@@ -366,6 +382,26 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+<!-- jQuery -->
+
+
+<!-- DataTables  & Plugins -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="plugins/jszip/jszip.min.js"></script>
+<script src="plugins/pdfmake/pdfmake.min.js"></script>
+<script src="plugins/pdfmake/vfs_fonts.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
 
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
@@ -402,5 +438,22 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
 </body>
 </html>
