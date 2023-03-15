@@ -63,10 +63,10 @@ input:valid {
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.php" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/compte.html" class="nav-link">Espace Admin</a>
+        <a href="index.php" class="nav-link">Espace Admin</a>
       </li>
     </ul>
 
@@ -177,7 +177,7 @@ input:valid {
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         
           <li class="nav-item">
-            <a href="newStock.html" class="nav-link">
+            <a href="newStock.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p> 
                 Stock
@@ -187,7 +187,7 @@ input:valid {
           </li>
 
           <li class="nav-item">
-            <a href="newClient.html" class="nav-link">
+            <a href="newClient.php" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                Client
@@ -197,7 +197,7 @@ input:valid {
        
           </li>
           <li class="nav-item">
-            <a href="newFornisseur.html" class="nav-link">
+            <a href="newFornisseur.php" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                Fournisseur
@@ -207,7 +207,7 @@ input:valid {
        
           </li>
           <li class="nav-item">
-            <a href="newCommande.html" class="nav-link">
+            <a href="newCommande.php" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                Commande
@@ -217,7 +217,7 @@ input:valid {
        
           </li>
           <li class="nav-item">
-            <a href="facture.html" class="nav-link">
+            <a href="facture.php" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
               <p>Facture</p>
             </a>
