@@ -342,7 +342,10 @@ input:valid {
                 >
                 </i></center></td>
              
-              <td><center><i class="fa fa-trash" aria-hidden="true" style="color: rgb(240, 7, 7);width: 10px;"></i></center></td>
+              <td><center><i class="fa fa-trash" aria-hidden="true" 
+              style="color: rgb(240, 7, 7);width: 10px;"
+              data-toggle="modal" data-target="#supprimer"
+              ></i></center></td>
             </tr>
      
             </tbody>
@@ -389,9 +392,9 @@ input:valid {
       
     </section>
     <!-- /.content new client -->
-    <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header text-center" style="background-color: rgb(4, 25, 253);">
         <h4 class="modal-title w-100 font-weight-bold">Nouvelle Client</h4>
@@ -439,55 +442,78 @@ input:valid {
     </div>
 <!-- /.content modifier client -->
     <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center" style="background-color: rgb(84, 156, 11);">
-        <h4 class="modal-title w-100 font-weight-bold">Mofication</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fas fa-user prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Nom</label>
-          <input type="text" id="form3" class="form-control validate">
-         
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center" style="background-color: rgb(84, 156, 11);">
+              <h4 class="modal-title w-100 font-weight-bold">Mofication</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form3">Nom</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+              
+            
+                <i class="fas fa-user prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form3">Prénom</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+          
+          
+                <i class="fa-solid fa-location-dot"></i>
+                <label data-error="wrong" data-success="right" for="form3">Adresse</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+            
+                <i class="fas fa-phone prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form3">Téléphone</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+          
         
-      
-          <i class="fas fa-user prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Prénom</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-    
-     
-          <i class="fa-solid fa-location-dot"></i>
-          <label data-error="wrong" data-success="right" for="form3">Adresse</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-       
-          <i class="fas fa-phone prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Téléphone</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-     
-  
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form2">Email</label>
-          <input type="email" id="form2" class="form-control validate">
-         
-        </div>
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form2">Email</label>
+                <input type="email" id="form2" class="form-control validate">
+              
+              </div>
 
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-success">Valider </button>
-      </div>
-    </div>
-  </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-success">Valider </button>
+            </div>
+          </div>
+        </div>
     </div>
 <!-- /.content delete client -->
-
+<div class="modal fade" id="supprimer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center" style="background-color:  rgb(176, 25, 5);">
+              <h4 class="modal-title w-100 font-weight-bold">Suppression</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+             
+                <center><label data-error="wrong" data-success="right" for="form3">vous êtes sûr!!!!</label></center>
+               
+              
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-danger">Valider </button>
+            </div>
+          </div>
+        </div>
+    </div>
 
 
   </div>
