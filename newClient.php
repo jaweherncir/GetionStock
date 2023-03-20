@@ -51,227 +51,10 @@ input:valid {
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
-
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-    <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.php" class="nav-link">Espace Admin</a>
-      </li>
-    </ul>
-
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-   
-
-      <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-comments"></i>
-          <span class="badge badge-danger navbar-badge">3</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Brad Diesel
-                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">Call me whenever you can...</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-        </div>
-      </li>
-
-
-
-      <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-      
-    </ul>
-  </nav>
-  <!-- /.navbar -->
+  <?php  require_once "navbar.php" ;?>
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Administrateur</span>
-    </a>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">Amado Ibrahim</a>
-        </div>
-      </div>
-
-
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        
-          <li class="nav-item">
-            <a href="newStock.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p> 
-                Stock
-            
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="newClient.php" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-               Client
-                
-              </p>
-            </a>
-       
-          </li>
-          <li class="nav-item">
-            <a href="newFornisseur.php" class="nav-link">
-              <i class="nav-icon fas fa-users"></i>
-              <p>
-               Fournisseur
-                
-              </p>
-            </a>
-       
-          </li>
-          <li class="nav-item">
-            <a href="newCommande.php" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-               Commande
-                
-              </p>
-            </a>
-       
-          </li>
-          <li class="nav-item">
-            <a href="facture.php" class="nav-link">
-              <i class="nav-icon fas fa-file"></i>
-              <p>Facture</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-              Statstique
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
-            </ul>
-          </li>  
-          <li class="nav-item">
-            <a href="https://adminlte.io/docs/3.1/" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>Compte</p>
-            </a>
-          </li>     
-   
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-
+  <?php  require_once "header.php" ;?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -342,7 +125,10 @@ input:valid {
                 >
                 </i></center></td>
              
-              <td><center><i class="fa fa-trash" aria-hidden="true" style="color: rgb(240, 7, 7);width: 10px;"></i></center></td>
+              <td><center><i class="fa fa-trash" aria-hidden="true" 
+              style="color: rgb(240, 7, 7);width: 10px;"
+              data-toggle="modal" data-target="#supprimer"
+              ></i></center></td>
             </tr>
      
             </tbody>
@@ -389,9 +175,9 @@ input:valid {
       
     </section>
     <!-- /.content new client -->
-    <div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="modalSubscriptionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header text-center" style="background-color: rgb(4, 25, 253);">
         <h4 class="modal-title w-100 font-weight-bold">Nouvelle Client</h4>
@@ -439,69 +225,84 @@ input:valid {
     </div>
 <!-- /.content modifier client -->
     <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center" style="background-color: rgb(84, 156, 11);">
-        <h4 class="modal-title w-100 font-weight-bold">Mofication</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fas fa-user prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Nom</label>
-          <input type="text" id="form3" class="form-control validate">
-         
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center" style="background-color: rgb(84, 156, 11);">
+              <h4 class="modal-title w-100 font-weight-bold">Mofication</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fas fa-user prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form3">Nom</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+              
+            
+                <i class="fas fa-user prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form3">Prénom</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+          
+          
+                <i class="fa-solid fa-location-dot"></i>
+                <label data-error="wrong" data-success="right" for="form3">Adresse</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+            
+                <i class="fas fa-phone prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form3">Téléphone</label>
+                <input type="text" id="form3" class="form-control validate">
+              
+          
         
-      
-          <i class="fas fa-user prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Prénom</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-    
-     
-          <i class="fa-solid fa-location-dot"></i>
-          <label data-error="wrong" data-success="right" for="form3">Adresse</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-       
-          <i class="fas fa-phone prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Téléphone</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-     
-  
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form2">Email</label>
-          <input type="email" id="form2" class="form-control validate">
-         
-        </div>
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <label data-error="wrong" data-success="right" for="form2">Email</label>
+                <input type="email" id="form2" class="form-control validate">
+              
+              </div>
 
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-success">Valider </button>
-      </div>
-    </div>
-  </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-success">Valider </button>
+            </div>
+          </div>
+        </div>
     </div>
 <!-- /.content delete client -->
-
+<div class="modal fade" id="supprimer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center" style="background-color:  rgb(176, 25, 5);">
+              <h4 class="modal-title w-100 font-weight-bold">Suppression</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+             
+                <center><label data-error="wrong" data-success="right" for="form3">vous êtes sûr!!!!</label></center>
+               
+              
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-danger">Valider </button>
+            </div>
+          </div>
+        </div>
+    </div>
 
 
   </div>
 
 
-
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
-    </div>
-  </footer>
+  <?php  require_once "footer.php" ;?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
