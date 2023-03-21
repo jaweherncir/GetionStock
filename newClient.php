@@ -186,40 +186,47 @@ input:valid {
         </button>
       </div>
       <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fas fa-user prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Nom</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-        
-      
-          <i class="fas fa-user prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Prénom</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-    
-     
-          <i class="fa-solid fa-location-dot"></i>
-          <label data-error="wrong" data-success="right" for="form3">Adresse</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-       
-          <i class="fas fa-phone prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form3">Téléphone</label>
-          <input type="text" id="form3" class="form-control validate">
-         
-     
-  
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="form2">Email</label>
-          <input type="email" id="form2" class="form-control validate">
-         
-        </div>
+
+
+        <form>
+                <div class="md-form mb-5">
+                  <i class="fas fa-user prefix grey-text"></i>
+                  <label data-error="wrong" data-success="right" for="form3" >Nom</label>
+                  <input type="text" id="form3" class="form-control validate"required>
+                
+                
+              
+                  <i class="fas fa-user prefix grey-text"></i>
+                  <label data-error="wrong" data-success="right" for="form3">Prénom</label>
+                  <input type="text" id="form3" class="form-control validate"required>
+                
+            
+            
+                  <i class="fa-solid fa-location-dot"></i>
+                  <label data-error="wrong" data-success="right" for="form3">Adresse</label>
+                  <input type="text" id="form3" class="form-control validate"required>
+                
+              
+                  <i class="fas fa-phone prefix grey-text"></i>
+                  <label data-error="wrong" data-success="right" for="form3">Téléphone</label>
+                  <input type="text" id="form3" class="form-control validate"required>
+                
+            
+          
+                  <i class="fas fa-envelope prefix grey-text"></i>
+                  <label data-error="wrong" data-success="right" for="form2">Email</label>
+                  <input type="email" id="form2" class="form-control validate"required>
+                
+                </div>
+        </form>
+
+
 
       </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-primary">Ajouter </button>
-      </div>
+      
+          <div class="modal-footer d-flex justify-content-center">
+            <button class="btn btn-primary">Ajouter </button>
+          </div>
     </div>
   </div>
     </div>
