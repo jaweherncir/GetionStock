@@ -101,7 +101,7 @@
       
         </div>
         <div class="card-header" >
-            <a class="btn btn-app bg-success">
+            <a  href="nouvelleProduit.php"class="btn btn-app bg-success">
                 <span class="badge badge-danger">300</span>
                 <i class="fas fa-barcode"></i> Nouvelle Produit
               </a>
@@ -133,9 +133,16 @@
               <td>-</td>
               <td><center><button type="button" class="btn btn-warning" disabled="true">02/02/2022</button></center></td>
               <td>-</td>
-              <td><center><i class="fa fa-pencil" aria-hidden="true" style="color: rgb(84, 156, 11);width: 10px;"></i></center></td>
+              <td><center>
+                <i class="fa fa-pencil" aria-hidden="true" style="color: rgb(84, 156, 11);width: 10px;"
+                data-toggle="modal" data-target="#modifier"
+                >
+                </i></center></td>
              
-              <td><center><i class="fa fa-trash" aria-hidden="true" style="color: rgb(240, 7, 7);width: 10px;"></i></center></td>
+                <td><center><i class="fa fa-trash" aria-hidden="true" 
+              style="color: rgb(240, 7, 7);width: 10px;"
+              data-toggle="modal" data-target="#supprimer"
+              ></i></center></td>
              
             </tr>
            
@@ -179,7 +186,107 @@
         
       </div><!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
+    <!-- /.content modifier produit -->
+    <div class="modal fade" id="modifier" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-center"style="background-color: rgb(84, 156, 11);">
+                <h4 class="modal-title w-100 font-weight-bold">Modifier Produit</h4>
+                <a href="newStock.php">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </a>
+              </div>
+              
+              <div class="modal-body mx-3">
+
+              <form action="#" method="POST">
+
+              
+                        <div class="md-form mb-5">
+                       
+                          <label data-error="wrong" data-success="right" for="form3" >Nom Produit</label>
+                          <input type="text" id="form3" class="form-control validate"required>
+                        
+                        
+                      
+                  
+                          <label data-error="wrong" data-success="right" for="form3">Description Produit</label>
+                          <input type="text" id="form3" class="form-control validate"required>
+                        
+                          <label data-error="wrong" data-success="right" for="form3">Produit Unit</label>
+                          <input type="text" id="form3" class="form-control validate"required>
+                    
+                    
+                          <label data-error="wrong" data-success="right" for="form3">Prix Produit</label>
+                          <input type="text" id="form3" class="form-control validate"required>
+                        
+                      
+                          
+                          <label data-error="wrong" data-success="right" for="form3"> Quantité Produit </label>
+                          <input type="text" id="form3" class="form-control validate"required>
+                        
+                    
+                          <label data-error="wrong" data-success="right" for="form2">Categorie</label>
+                          <input type="text" id="form2" class="form-control validate"required>
+                         
+                          <label data-error="wrong" data-success="right" for="form2">Produit stockeé</label>
+                          <input type="text" id="form2" class="form-control validate"required>
+                          <label data-error="wrong" data-success="right" for="form2">Autre detail</label>
+                          <input type="text" id="form2" class="form-control validate"required>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-success">Ajouter </button>
+                  </div>
+                </form>
+
+
+            </div>
+            
+              
+              
+                
+            </div>
+          </div>
+        </div>
+    
+
+
+
+    </div>
+    <!-- /.content delete Produit -->
+<div class="modal fade" id="supprimer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center" style="background-color:  rgb(176, 25, 5);">
+              <h4 class="modal-title w-100 font-weight-bold">Suppression</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+            <form action="#" method="POST">
+                    <div class="md-form mb-5">
+                    
+                        <center><label data-error="wrong" data-success="right" for="form3">vous êtes sûr!!!!</label></center>
+                      
+                      
+                      </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button class="btn btn-danger">Valider </button>
+                    </div>
+               </form>
+          </div>
+        </div>
+</div>
+
+
+
+
   </div>
 
 
